@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{ flatpage.title }}</title>
+</head>
+<body>
+{% include 'flatpages/starting_template.html' %}
+<h2><span style="text-decoration: underline;"><em><span style="color: #ffcc00; text-decoration: underline;">{{ flatpage.title }}</span></em></span></h2>
+{{ flatpage.content }}
+<hr />
+{% block body %}
+{% endblock body %}
+</body>
+</html>
